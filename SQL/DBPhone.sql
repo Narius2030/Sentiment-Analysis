@@ -4,7 +4,7 @@ use SalesPhone
 go
 CREATE TABLE users (
     id INT identity PRIMARY KEY,
-    username VARCHAR(255) NOT NULL,
+    username VARCHAR(255) unique,
     full_name nVARCHAR(255) NOT NULL,
     password VARCHAR(255) NOT NULL
 );

@@ -5,8 +5,6 @@ CREATE Or Alter PROCEDURE CheckLogin
     @Password NVARCHAR(50)
 AS
 BEGIN
-    SET NOCOUNT ON;
-
     DECLARE @Count INT;
     
     SELECT @Count = COUNT(*) 
